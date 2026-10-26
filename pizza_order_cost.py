@@ -17,3 +17,9 @@ else:
 
 # calculate toppings cost ($1 each)
 toppings_cost = toppings * 1
+
+# delivery fee: $2 for first 5 miles, then $1 per extra mile
+if distance <= 5:
+    delivery_cost = 2
+else:
+    delivery_cost = 2 + (distance - 5) * 1
