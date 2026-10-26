@@ -23,3 +23,8 @@ if distance <= 5:
     delivery_cost = 2
 else:
     delivery_cost = 2 + (distance - 5) * 1
+
+# add everything together and print final bill
+total_bill = pizza_price + toppings_cost + delivery_cost
+
+print(f"Your total bill is ${total_bill}")
